@@ -86,7 +86,10 @@ const Header = (props) => {
                         </OL>
                     </LinkContainer>
 
-                    <Button>Resume</Button>
+                    <form target='__blank' action="./Resume.pdf">
+                        <Button type='submit' >Resume</Button>
+                    </form>
+
                 </Nav>
         </StyledHeader>
     );
