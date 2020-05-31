@@ -59,7 +59,7 @@ const ResumeButton = styled.a`
     font-size : 15px;
     font-weight : 500;
     background-color : transparent;
-    flex : 0 0 100px;
+    flex : 0 0 60px;
     margin : 20px;
     cursor : pointer;
     transition : scale 0s ease-in-out;
