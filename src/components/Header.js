@@ -51,7 +51,7 @@ const OL = styled.ol`
     justify-content: flex-end;
 `;
 
-const Button = styled.button`
+const ResumeButton = styled.a`
     border : 2px solid gold;
     border-radius : 5px;
     padding : 10px;
@@ -63,6 +63,7 @@ const Button = styled.button`
     margin : 20px;
     cursor : pointer;
     transition : scale 0s ease-in-out;
+    text-decoration : none;
 
     :hover  {
         transform : scale(1.1)
@@ -86,10 +87,7 @@ const Header = (props) => {
                         </OL>
                     </LinkContainer>
 
-                    <form target='__blank' action="./Resume.pdf">
-                        <Button type='submit' >Resume</Button>
-                    </form>
-
+                    <ResumeButton target='__blank' href="./Resume.pdf">Resume</ResumeButton>
                 </Nav>
         </StyledHeader>
     );

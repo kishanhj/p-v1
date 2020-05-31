@@ -33,10 +33,10 @@ const Desc = styled.p`
     font-size : 20px;
 `;
 
-const Button = styled.button`
+const SayHiLink = styled.a`
     border : 2px solid gold;
     border-radius : 5px;
-    padding : 15px;
+    padding : 10px;
     color : gold;
     font-size : 20px;
     font-weight : 500;
@@ -51,6 +51,10 @@ const Button = styled.button`
     }
 `;
 
+const Padding = styled.div`
+    height : 30px;
+`;
+
 const About = () => {
 
     return (
@@ -63,10 +67,8 @@ const About = () => {
                 I can build modern full-fledged, responsive websites, 
                 and cross-platform mobile apps ( IOS and Android ).
             </Desc>
-
-            <form action="mailto:khuliyar@stevens.edu" target="__blank">
-                <Button  type="submit" > Say Hi </Button>
-            </form>
+            <Padding />
+            <SayHiLink href="mailto:khuliyar@stevens.edu" target="__blank"> Say Hi </SayHiLink>
 
         </StyledContainer>
     );
