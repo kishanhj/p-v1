@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components" 
 
 const StyledHeader = styled.header`
-    background-color : #121212;
     display : flex;
     min-height : 80px;
     margin-left : 20px;
@@ -21,7 +20,7 @@ const Link = styled.a`
     text-decoration : none;
     padding : 1em;
     color : white;
-    transition : color 0.5s ease-in,text-decoration 0.5 cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition : color 0.5s ease-in;
 
     :visited {
         color : white;
@@ -29,7 +28,6 @@ const Link = styled.a`
 
     :hover {
         color : gold;
-        text-decoration : underline;
     }
 
 `;

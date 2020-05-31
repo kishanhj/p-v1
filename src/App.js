@@ -3,8 +3,9 @@ import Header from "./components/Header"
 import styled from "styled-components"
 import Axios from 'axios';
 
-const styledContainer = styled.div`
-  
+const StyledContainer = styled.div`
+    background-color : #121212;
+    color : white;
 `;
 
 function App() {
@@ -34,9 +35,9 @@ function App() {
   return ( <div className='wrapper'> Loading ... </div>);
 
   return (
-    <div className='wrapper'>
+    <StyledContainer>
       <Header />
-    </div>
+    </StyledContainer>
   );
 }
 
