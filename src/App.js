@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from "./components/Header"
 import styled from "styled-components"
 import Axios from 'axios';
+import About from './components/About';
 
 const StyledContainer = styled.div`
     background-color : #121212;
@@ -37,6 +38,7 @@ function App() {
   return (
     <StyledContainer>
       <Header />
+      <About />
     </StyledContainer>
   );
 }
