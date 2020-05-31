@@ -1,5 +1,6 @@
 import React from "react";
-import styled from "styled-components" 
+import styled from "styled-components"
+import media from "../data/media"
 
 const StyledHeader = styled.header`
     display : flex;
@@ -7,13 +8,18 @@ const StyledHeader = styled.header`
     margin-left : 20px;
     margin-right : 20px;
     color : white;
-
 `;
 
 const Nav = styled.nav`
     display : flex;
     align-items : center;
     width : 100%;
+
+    ${
+        media.tablet `
+            flex-direction : column;
+        `
+    }
 `;
 
 const Link = styled.a`

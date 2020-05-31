@@ -43,11 +43,11 @@ const SayHiLink = styled.a`
     background-color : transparent;
     margin-top : 20px;
     cursor : pointer;
-    transition : scale 0s ease-in-out;
+    transition : all 1s ease-in-out;
     text-decoration : none;
 
     :hover  {
-        transform : scale(1.1)
+        transform : scale(1.1);
     }
 `;
 
