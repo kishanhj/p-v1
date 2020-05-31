@@ -7,6 +7,7 @@ import About from './components/About';
 const StyledContainer = styled.div`
     background-color : #121212;
     color : white;
+    font-family: 'Montserrat', sans-serif;
 `;
 
 function App() {
