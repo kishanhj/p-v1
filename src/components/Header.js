@@ -2,24 +2,73 @@ import React from "react";
 import styled from "styled-components" 
 
 const StyledHeader = styled.header`
-    // background-color : yellow;
+    background-color : #121212;
     display : flex;
+    min-height : 80px;
+    margin-left : 20px;
+    margin-right : 20px;
+    color : white;
+
 `;
 
 const Nav = styled.nav`
     display : flex;
-    justify-content : center;
+    align-items : center;
+    width : 100%;
 `;
 
 const Link = styled.a`
     text-decoration : none;
     padding : 1em;
+    color : white;
+    transition : color 0.5s ease-in,text-decoration 0.5 cubic-bezier(0.645, 0.045, 0.355, 1);
+
+    :visited {
+        color : white;
+    }
+
+    :hover {
+        color : gold;
+        text-decoration : underline;
+    }
 
 `;
 
 const Image = styled.img`
-    width : 60px;
+    width : 50px;
+    height : 60px;
     margin : 5px;
+    flex : 0 0 60px;
+    border-radius : 50px;
+`;
+
+const LinkContainer = styled.div`
+    // border : 1px solid green;
+    flex : 1 0 100px;
+    
+`;
+
+const OL = styled.ol`
+    display : flex;
+    justify-content: flex-end;
+`;
+
+const Button = styled.button`
+    border : 2px solid gold;
+    border-radius : 5px;
+    padding : 10px;
+    color : gold;
+    font-size : 15px;
+    font-weight : 500;
+    background-color : transparent;
+    flex : 0 0 100px;
+    margin : 20px;
+    cursor : pointer;
+    transition : scale 0s ease-in-out;
+
+    :hover  {
+        transform : scale(1.1)
+    }
 `;
 
 
@@ -27,12 +76,19 @@ const Header = (props) => {
     
     return (
         <StyledHeader>
-                <Image src="./img.png" />
                 <Nav>
-                    <Link href="/"> 1.About </Link>
-                    <Link href="/"> 2.Experience </Link>
-                    <Link href="/"> 3.Projects </Link>
-                    <Link href="/"> 4.Contact </Link>
+                    <Image src="./img.png" />
+
+                    <LinkContainer>
+                        <OL>
+                            <Link href="/"> <li>About</li> </Link>
+                            <Link href="/"> <li>Experience</li> </Link>
+                            <Link href="/"> <li>Projects</li> </Link>
+                            <Link href="/"> <li>Contact</li> </Link>
+                        </OL>
+                    </LinkContainer>
+
+                    <Button>Resume</Button>
                 </Nav>
         </StyledHeader>
     );

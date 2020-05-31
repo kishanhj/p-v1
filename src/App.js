@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Header from "./components/Header"
+import styled from "styled-components"
 import Axios from 'axios';
+
+const styledContainer = styled.div`
+  
+`;
 
 function App() {
   
