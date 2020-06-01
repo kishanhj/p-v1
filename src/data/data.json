@@ -4,9 +4,36 @@
         "Summary" : {
 
         },
-        "Experience" : {
-
-        },
+        "Experience" : [
+            {
+                "key" : 1,
+                "company" : "Brillio Technologies",
+                "company_url" : "https://www.brillio.com/",
+                "position" : "Software Engineer",
+                "start" : "October 2016",
+                "end" : "December 2018",
+                "roles" : [
+                    "Implemented web-based application that facilitated all aspects of product design and development for PUMA.",
+                    "Involved in the costing module which facilitated negotiation among multiple players, supported multiple currencies and currency conversions in real-time with high accuracy.",
+                    "Implemented Observer model which enables seamless integration with multiple modules and maintains data consistency.",
+                    "Involved in all aspects of backend development, Implemented new features, fixed bugs, wrote DML and DDL.",
+                    "Designed and Implemented Front-end using Vaadin and CSS which supported multiple screen sizes and browsers and no accessibility issues."
+                ]
+            },
+            {
+                "key" : 2,
+                "company" : "Brillio Technologies",
+                "company_url" : "https://www.brillio.com/",
+                "position" : "Graduate Engineer Trainee",
+                "start" : "August 2016",
+                "end" : "October 2016",
+                "roles" : [
+                    "Automated the internal survey process. The application sends unique one-time links to every employee of the project on demand or at configured time, fetching mail Ids of employees by querying Active windows directory.",
+                    "Involved in all the aspects of development. Designed classes, interfaces and database tables.",
+                    "Configured Jasper reports for generating reports in Excel and pdf by aggregating survey results"
+                ]
+            }
+        ],
         "Projects" : {
 
         },

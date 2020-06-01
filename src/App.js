@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import styled from "styled-components"
 import Axios from 'axios';
 import About from './components/About';
+import Experience from './components/Experience';
 
 const StyledContainer = styled.div`
     background-color : #121212;
@@ -40,6 +41,7 @@ function App() {
     <StyledContainer>
       <Header />
       <About />
+      <Experience experience={profileData.Experience} />
     </StyledContainer>
   );
 }

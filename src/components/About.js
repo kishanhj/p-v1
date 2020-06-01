@@ -43,11 +43,11 @@ const SayHiLink = styled.a`
     background-color : transparent;
     margin-top : 20px;
     cursor : pointer;
-    transition : all 1s ease-in-out;
+    transition : all 0s ease-in-out;
     text-decoration : none;
 
-    :hover  {
-        transform : scale(1.1);
+    :hover {
+        font-size : 1.5em;
     }
 `;
 
@@ -60,7 +60,7 @@ const About = () => {
     return (
         <StyledContainer id="about">
             <Prefix>Hi, my name is </Prefix>
-            <Title>Kishan Huliyar Jagadeesh</Title>
+            <Title>Kishan Huliyar Jagadeesh.</Title>
             <Postfix>I build websites and Mobile Apps.</Postfix>
             <Desc> 
                 I am a Full-stack developer based in New York City, NY. 
