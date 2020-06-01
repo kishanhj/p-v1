@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Axios from 'axios';
 import About from './components/About';
 import Experience from './components/Experience';
+import Project from './components/Project';
 
 const StyledContainer = styled.div`
     background-color : #121212;
@@ -42,6 +43,7 @@ function App() {
       <Header />
       <About />
       <Experience experience={profileData.Experience} />
+      <Project projects={profileData.Projects} />
     </StyledContainer>
   );
 }

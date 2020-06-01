@@ -19,6 +19,7 @@ const Title = styled.h1`
 
 const Prefix = styled.div`
     color : gold;
+    font-size : 1.3em;
 `;
 
 const Postfix = styled.h2`

@@ -20,7 +20,8 @@ const Roles = styled.ul`
 
 const Role = styled.li`
     margin : 2px;
-    line-height : 1.25
+    line-height : 1.5;
+    font-size : 1.2em;
 `;
 
 const Company = styled.a`

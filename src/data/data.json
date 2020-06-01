@@ -34,9 +34,27 @@
                 ]
             }
         ],
-        "Projects" : {
-
-        },
+        "Projects" : [
+            {
+                "title" : "Quora-OverFlow",
+                "description" : "A question-answer site similar to quora and StackOverflow",
+                "github_url" : "https://github.com/kishanhj/QuoraFlow",
+                "hosting_url" : "http://quoraflow-backend.herokuapp.com/",
+                "technology" : ["Javascript","ReactJs","NodeJs","Express","Axios","MongoDB","Firebase","Elastic","AWS S3","Git"]
+            },{
+                "title" : "BidAway- A Real-time bidding platform",
+                "description" : "A bidding platform built over MERN stack. Users can search for multiple items based on category and bid for them in realtime with data consistency maintained using sockets",
+                "github_url" : "https://github.com/kishanhj/BidAway",
+                "hosting_url" : "",
+                "technology" : ["Javascript","HandleBarJs","NodeJs","Express","Axios","MongoDB","Ajax","SocketIO","Git"]
+            },{
+                "title" : "Wiki Search",
+                "description" : "Built a fully functional search engine using the compressed trie data structure for indexing, Built on top of Wiki dump",
+                "github_url" : "",
+                "hosting_url" : "",
+                "technology" : ["Java","HTML","CSS","TOMCAT","Git"]
+            }
+        ],
         "skills" : {
             
         }
