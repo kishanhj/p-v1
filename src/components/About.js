@@ -22,7 +22,7 @@ const Prefix = styled.div`
     font-size : 1.3em;
 `;
 
-const Postfix = styled.h2`
+const Tagline = styled.h2`
     margin : 0;
     font-size : 35px;
 `;
@@ -56,18 +56,14 @@ const Padding = styled.div`
     height : 30px;
 `;
 
-const About = () => {
-
+const About = ({data}) => {
+    const {name , tagline , intro} = data;
     return (
         <StyledContainer id="about">
             <Prefix>Hi, my name is </Prefix>
-            <Title>Kishan Huliyar Jagadeesh.</Title>
-            <Postfix>I build websites and Mobile Apps.</Postfix>
-            <Desc> 
-                I am a Full-stack developer based in New York City, NY. 
-                I can build modern full-fledged, responsive websites, 
-                and cross-platform mobile apps ( IOS and Android ).
-            </Desc>
+            <Title>{name}</Title>
+            <Tagline>{tagline}</Tagline>
+            <Desc> {intro} </Desc>
             <Padding />
             <SayHiLink href="mailto:khuliyar@stevens.edu" target="__blank"> Say Hi </SayHiLink>
 

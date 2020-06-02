@@ -24,13 +24,13 @@ function App() {
           
           // const {data} = await Axios.get("https://us-central1-testingfunctions-6f247.cloudfunctions.net/testing");
           // setProfileData(data);
-          const {localData} = require("./data/data.json")
-          setProfileData(localData);
+          const {data} = require("./data/data.json")
+          setProfileData(data);
           
         } catch (error) {
           console.log(error);
-          const {localData} = require("./data/data.json")
-          setProfileData(localData);
+          const {data} = require("./data/data.json")
+          setProfileData(data);
         }
       };
       getData();
@@ -43,7 +43,7 @@ function App() {
   return (
     <StyledContainer>
       <Header />
-      <About />
+      <About data={profileData}/>
       <Experience experience={profileData.Experience} />
       <Project projects={profileData.Projects} />
       <Contact contact={profileData.Contact} />

@@ -15,7 +15,8 @@ const StyledContainer = styled.footer`
 const Title = styled.h2`
     text-align : center;
     color : gold;
-
+    font-family: 'Caveat', cursive;
+    font-size : 50px;
 `;
 
 const Social = styled.div`
@@ -52,12 +53,12 @@ const Footer = ({social}) => {
         <StyledContainer>
             <Title>Keep in touch!!</Title>
             <Social>
-                <Link href={social.linkedIn} target="__blank"> <FaLinkedin /> </Link>
-                <Link href={social.gitHub} target="__blank"> <FaGithub /> </Link>
-                {/* <Link href={social.facebook} target="__blank"> <FaFacebook /> </Link> */}
-                <Link href={social.leetcode} target="__blank"> <FaCode /> </Link>
-                <Link href={social.instagram} target="__blank"> <FaInstagram /> </Link>
-                <Link href="mailto:khuliyar@stevens.edu" target="__blank"> <FaMailBulk /> </Link>
+                <Link href={social.linkedIn} title='LinkedIn' target="__blank"> <FaLinkedin /> </Link>
+                <Link href={social.gitHub} title='GitHub' target="__blank"> <FaGithub /> </Link>
+                {/* <Link href={social.facebook} title='Facebook' target="__blank"> <FaFacebook /> </Link> */}
+                <Link href={social.leetcode} title='LeetCode' target="__blank"> <FaCode /> </Link>
+                <Link href={social.instagram} title='Instagram' target="__blank"> <FaInstagram /> </Link>
+                <Link href="mailto:khuliyar@stevens.edu" title='Mail' target="__blank"> <FaMailBulk /> </Link>
             </Social>
         </StyledContainer>
     )

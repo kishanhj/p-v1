@@ -24,9 +24,9 @@ const Nav = styled.nav`
 
 const Link = styled.a`
     text-decoration : none;
-    padding : 1em;
+    padding : 1.25em;
     color : white;
-    transition : color 0.5s ease-in;
+    transition : all 0s ease-in;
 
     :visited {
         color : white;
@@ -34,6 +34,7 @@ const Link = styled.a`
 
     :hover {
         color : gold;
+        transform : scale(1.2)
     }
 
 `;
@@ -68,7 +69,7 @@ const ResumeButton = styled.a`
     flex : 0 0 60px;
     margin : 20px;
     cursor : pointer;
-    transition : scale 0s ease-in-out;
+    transition : all 0s ease-in-out;
     text-decoration : none;
 
     :hover  {
