@@ -38,7 +38,6 @@ const Tech = styled.span`
 var count = 1;
 
 const ProjectCard = ({data}) => {
-    console.log(data);
     return (
         <StyledContainer>
             <TitleWrap>

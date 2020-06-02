@@ -18,8 +18,6 @@ var count = 1;
 
 const Project = ({projects}) => {
 
-    console.log("projects  : ",projects)
-
     return (
         <StyledContainer id="projects">
             <SectionTitle>3. Projects</SectionTitle>

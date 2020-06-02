@@ -55,8 +55,20 @@
                 "technology" : ["Java","HTML","CSS","TOMCAT","Git"]
             }
         ],
-        "skills" : {
+        "Contact" : {
+            "title" : "4. Get in touch",
+            "description" : "I am currently looking for Internships for Spring-2020 and Fulltime opportunities for May-2021. Please reach out to me if you have position. Anyway, My Inbox is always open, whether to say hi or any feedback. I will try my best to get back to you!", 
+            "email" : "khuliyar@stevens.edu"
+        },
+        "Skills" : {
             
+        },
+        "Social" : {
+            "linkedIn" : "https://www.linkedin.com/in/kishanhuliyar/",
+            "gitHub" : "https://github.com/kishanhj",
+            "facebook" : "https://www.facebook.com/kishanhj",
+            "instagram" : "https://www.instagram.com/kishanhuliyar_/",
+            "leetcode" : "https://leetcode.com/huliyar/"
         }
     }
 }
