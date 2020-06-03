@@ -58,14 +58,13 @@ const SkillText = styled.div`
 
 const SkillList = styled.div`
     display : flex;
+    flex-wrap : wrap;
 `;
 
 const SkillDomain = styled.div`
     
-    margin : 5px;
-    // padding : 5px;
-    flex-warp : wrap;
-    flex : 0 0 80px;
+    margin : 2px;
+    flex : 0 0 auto;
 `;
 
 const SkillDomainTitle = styled.p`
@@ -76,7 +75,7 @@ const SkillDomainTitle = styled.p`
 const Skill = styled.div`
     border : 2px solid gold;
     margin : 10px;
-    padding : 5px;
+    padding : 6px;
     border-radius : 5px;
     text-align : center;
 `;
@@ -95,10 +94,10 @@ const AboutMe = ({AboutMe}) => {
                 <SkillText>Some Technologies I have worked on : </SkillText>
                 <SkillList>
                     {Skills && Object.keys(Skills).map((key,value) =>
-                        <SkillDomain>
+                        <SkillDomain key={key}>
                             <SkillDomainTitle>{key}</SkillDomainTitle>
                             {Skills[key].map(
-                                (skill) => <Skill>{skill}</Skill>
+                                (skill) => <Skill key={skill}>{skill}</Skill>
                             )}
                         </SkillDomain>
                     )}
