@@ -26,6 +26,7 @@ const Link = styled.a`
     text-decoration : none;
     padding : 1.25em;
     transition : all 0s ease-in;
+    color : white;
 
     :visited {
         color : white;
