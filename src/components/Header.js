@@ -87,7 +87,7 @@ const Header = (props) => {
 
                     <LinkContainer>
                         <OL>
-                            <Link href="#about"> <li>About</li> </Link>
+                            <Link href="#aboutMe"> <li>About</li> </Link>
                             <Link href="#experience"> <li>Experience</li> </Link>
                             <Link href="#projects"> <li>Projects</li> </Link>
                             <Link href="#contact"> <li>Contact</li> </Link>

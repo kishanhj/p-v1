@@ -53,7 +53,7 @@
                 "description" : "A question-answer site similar to quora and StackOverflow",
                 "github_url" : "https://github.com/kishanhj/QuoraFlow",
                 "hosting_url" : "http://quoraflow-backend.herokuapp.com/",
-                "technology" : ["Javascript","ReactJs","NodeJs","Express","Axios","MongoDB","Firebase","Elastic","AWS S3","Git"]
+                "technology" : ["Javascript","ReactJs","NodeJs","Express","Axios","MongoDB","Firebase","ElasticSearch","AWS S3","Git"]
             },{
                 "title" : "BidAway- A Real-time bidding platform",
                 "description" : "A bidding platform built over MERN stack. Users can search for multiple items based on category and bid for them in realtime with data consistency maintained using sockets",

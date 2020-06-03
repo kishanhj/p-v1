@@ -84,7 +84,7 @@ const Skill = styled.div`
 const AboutMe = ({AboutMe}) => {
     const {Summary,Skills} = AboutMe;
     return(
-        <StyledContainer id="AboutMe">
+        <StyledContainer id="aboutMe">
             <SectionTitle>1. About Me </SectionTitle>
             <SummaryContainer>
                 <SummaryText>{Summary} <Link href="https://www.stevens.edu/" target="__blank"> Stevens Institue of Technology</Link></SummaryText>

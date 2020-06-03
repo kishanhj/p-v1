@@ -26,7 +26,6 @@ function App() {
         try {
           
           // const {data} = await Axios.get("https://us-central1-portfolio-61223.cloudfunctions.net/getPortFolioData");
-          // console.log(data);
           // setProfileData(data.data);
         } catch (error) {
           console.log(error);
