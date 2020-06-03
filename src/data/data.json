@@ -3,8 +3,19 @@
         "name" : "Kishan Huliyar Jagadeesh.",
         "tagline" : "I build websites and Mobile Apps.",
         "intro" : "I am a Full-stack developer based in New York City, NY. I can build modern, full-fledged, responsive websites, and cross-platform mobile apps ( IOS and Android ).",
-        "Summary" : {
-
+        "AboutMe" : {
+            "Skills" : {
+                "Languages" : ["Javascript","Java","Python","Dart","Kotlin"],
+                "Frameworks" : ["Node.js","React.js","Express.js","Vue.js","Spring","Vaadin"],
+                "Mobile" : ["React Native","Expo cli","Flutter","Android Studio"],
+                "Web" : ["HTML","CSS","SCSS","Jquery","Bootstrap"],
+                "Cloud" : ["Firebase","Netlify","Google Cloud","AWS","Heroku"],
+                "Design" : ["WordPress","Adobe XD"],
+                "Database" : ["MongoDB","SQL Lite","MySQL","DB2"],
+                "Tools" : ["Elastic Search","Redis","Gulp","Jenkins","Jasper Reports"],
+                "IDE" : ["Visual Studio Code","Eclipse","IntelliJ"]
+            },
+            "Summary" : "Hello, I am from Bangalore, India and currently pursuing a Masters degree in Computer Science specializing in Web and Mobile Technologies @ "
         },
         "Experience" : [
             {
@@ -61,17 +72,6 @@
             "title" : "4. Contact",
             "description" : "I am currently looking for Internships for Spring-2020 and Fulltime opportunities for May-2021. Please reach out to me if you have position in mind. Anyway, My Inbox is always open, whether to say hi or any feedback. I will try my best to get back to you!", 
             "email" : "khuliyar@stevens.edu"
-        },
-        "Skills" : {
-            "Languages" : ["Javascript","Java","Python","Dart","Kotlin"],
-            "Frameworks" : ["Node.js","React.js","Express.js","Vue.js","Spring","Vaadin"],
-            "Mobile" : ["React Native","Expo cli","Flutter","Android Studio"],
-            "Web" : ["HTML","CSS","SCSS","Jquery","Bootstrap"],
-            "Cloud" : ["Firebase","Netlify","Google Cloud","AWS","Heroku"],
-            "Design" : ["WordPress","Adobe XD"],
-            "Database" : ["MongoDB","SQL Lite","MySQL","DB2"],
-            "Tools" : ["Elastic Search","Redis","Gulp","Jenkins","Jasper Reports"],
-            "IDE" : ["Visual Studio Code","Eclipse","IntelliJ"]
         },
         "Social" : {
             "linkedIn" : "https://www.linkedin.com/in/kishanhuliyar/",

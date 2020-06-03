@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Project from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AboutMe from './components/AboutMe';
 
 const StyledContainer = styled.div`
     background-color : #121212;
@@ -16,21 +17,19 @@ const StyledContainer = styled.div`
 
 function App() {
   
-  const [profileData,setProfileData] = useState(undefined);
+  
+  const {data} = require("./data/data.json")
+  const [profileData,setProfileData] = useState(data);
 
     useEffect(() => {
       async function getData(){
         try {
           
-          // const {data} = await Axios.get("https://us-central1-testingfunctions-6f247.cloudfunctions.net/testing");
-          // setProfileData(data);
-          const {data} = require("./data/data.json")
-          setProfileData(data);
-          
+          // const {data} = await Axios.get("https://us-central1-portfolio-61223.cloudfunctions.net/getPortFolioData");
+          // console.log(data);
+          // setProfileData(data.data);
         } catch (error) {
           console.log(error);
-          const {data} = require("./data/data.json")
-          setProfileData(data);
         }
       };
       getData();
@@ -44,6 +43,7 @@ function App() {
     <StyledContainer>
       <Header />
       <About data={profileData}/>
+      <AboutMe AboutMe={profileData.AboutMe} />
       <Experience experience={profileData.Experience} />
       <Project projects={profileData.Projects} />
       <Contact contact={profileData.Contact} />
