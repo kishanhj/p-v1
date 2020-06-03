@@ -55,7 +55,7 @@ const Footer = ({social}) => {
             <Social>
                 <Link href={social.linkedIn} title='LinkedIn' target="__blank"> <FaLinkedin /> </Link>
                 <Link href={social.gitHub} title='GitHub' target="__blank"> <FaGithub /> </Link>
-                {/* <Link href={social.facebook} title='Facebook' target="__blank"> <FaFacebook /> </Link> */}
+                <Link href={social.facebook} title='Facebook' target="__blank"> <FaFacebook /> </Link>
                 <Link href={social.leetcode} title='LeetCode' target="__blank"> <FaCode /> </Link>
                 <Link href={social.instagram} title='Instagram' target="__blank"> <FaInstagram /> </Link>
                 <Link href="mailto:khuliyar@stevens.edu" title='Mail' target="__blank"> <FaMailBulk /> </Link>

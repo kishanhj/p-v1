@@ -46,11 +46,6 @@ const SayHiLink = styled.a`
 
 const Contact = ({contact}) => {
 
-    function getMailLink(){
-        console.log(`mailto:${contact.email}`)
-        return `mailto:${contact.email}`;
-    }
-
     return (
         <StyledContainer id="contact">
             <SectionTitle>{contact.title}</SectionTitle>
