@@ -25,7 +25,6 @@ const Nav = styled.nav`
 const Link = styled.a`
     text-decoration : none;
     padding : 1.25em;
-    color : white;
     transition : all 0s ease-in;
 
     :visited {
