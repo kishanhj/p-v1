@@ -1,5 +1,6 @@
-import React from "react";
-import styled from "styled-components";
+import React, { useState } from "react";
+import styled  from "styled-components";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 
 const StyledContainer = styled.section`
@@ -8,6 +9,20 @@ const StyledContainer = styled.section`
     margin: 0 auto;
     padding: 60px 0;
     opacity : 1;
+    transform: scale(1);
+    transition: transform 1.5s ease, opacity 2s ease;
+
+    .fade-enter {
+        opacity : 0;
+        transform : translateY(30px);
+    }
+    
+    .fade-enter-active {
+        opacity : 1;
+        transform : translateY(0px);
+        transition : transform 500ms ease-in,opacity 500ms ease-in;
+    }
+
 `;
 
 const Title = styled.h1`
@@ -52,21 +67,36 @@ const SayHiLink = styled.a`
     }
 `;
 
-const Padding = styled.div`
-    height : 30px;
+const LinkWarp = styled.div`
+    margin-top : 30px;
 `;
 
 const About = ({data}) => {
     const {name , tagline , intro} = data;
+    const [isMounted,setMounted] = useState(false);
+    setInterval(
+        () => setMounted(true),1000
+    )
+
+    const prefixC = () => (<Prefix style={{ transitionDelay: `400ms` }}>Hi, my name is </Prefix>);
+    const titleC = () => (<Title style={{ transitionDelay: `500ms` }}>{name}</Title>);
+    const taglineC = () => (<Tagline style={{ transitionDelay: `600ms` }}>{tagline}</Tagline>);
+    const descC = () => (<Desc style={{ transitionDelay: `700ms` }}> {intro} </Desc>)
+    const hiLinkC = () => (<LinkWarp style={{ transitionDelay: `800ms` }} ><SayHiLink  href="mailto:khuliyar@stevens.edu" target="__blank"> Say Hi </SayHiLink></LinkWarp>)
+
+    const comps = [prefixC,titleC,taglineC,descC,hiLinkC];
+
     return (
         <StyledContainer id="about">
-            <Prefix>Hi, my name is </Prefix>
-            <Title>{name}</Title>
-            <Tagline>{tagline}</Tagline>
-            <Desc> {intro} </Desc>
-            <Padding />
-            <SayHiLink href="mailto:khuliyar@stevens.edu" target="__blank"> Say Hi </SayHiLink>
-
+            <TransitionGroup  component={null}>                       
+                {isMounted  && comps.map((item) => 
+                    <CSSTransition in={isMounted} timeout={1200} 
+                    classNames={{
+                                enter: 'fade-enter',
+                                enterActive: 'fade-enter-active'}}>
+                        {item}   
+                    </CSSTransition>) }
+            </TransitionGroup>
         </StyledContainer>
     );
 }

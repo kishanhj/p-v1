@@ -13,9 +13,11 @@ const Link = styled.a`
     }
 
     :hover {
-        font-size : 1.8em;
+        font-size : 1.8em; 
         color : gold;
     }
+
+    color : white;
     margin : 5px;
     text-decoration : none;
     font-size : 1.5em;
@@ -29,8 +31,8 @@ const ProjectLinks = ({data}) => {
 
     return (
         <StyledContainer>
-            {github_url && <Link href={github_url} target="__blank"> <FaGithub /> </Link>}
-            {hosting_url && <Link href={hosting_url} target="__blank"><FaExternalLinkAlt /> </Link>}
+            {github_url && <Link href={github_url} title='GitHub' target="__blank"> <FaGithub /> </Link>}
+            {hosting_url && <Link href={hosting_url} title='Live site' target="__blank"><FaExternalLinkAlt /> </Link>}
         </StyledContainer>
     );
 }
