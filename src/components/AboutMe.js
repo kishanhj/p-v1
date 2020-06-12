@@ -12,7 +12,7 @@ const StyledContainer = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-    color : gold;
+    color : ${props => props.theme.link};
 `;
 
 const SummaryContainer = styled.div`
@@ -50,7 +50,7 @@ const Image = styled.img`
 
 const Link = styled.a`
     text-decoration : none;
-    color : gold;
+    color : ${props => props.theme.link};
     transition : all 0s ease-in;
 
     :hover {
@@ -80,12 +80,12 @@ const SkillDomain = styled.div`
 `;
 
 const SkillDomainTitle = styled.p`
-    color : gold;
+    color : ${props => props.theme.link};
     text-align : center;
 `;
 
 const Skill = styled.div`
-    border : 2px solid gold;
+    border : 2px solid ${props => props.theme.border};
     margin : 10px;
     padding : 6px;
     border-radius : 5px;

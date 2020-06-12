@@ -9,15 +9,15 @@ const StyledContainer = styled.div`
 
 const Link = styled.a`
     :visited {
-        color : white;
+        color : ${props => props.theme.color};
     }
 
     :hover {
         font-size : 1.8em; 
-        color : gold;
+        color : ${props => props.theme.link};
     }
 
-    color : white;
+    color : ${props => props.theme.color};
     margin : 5px;
     text-decoration : none;
     font-size : 1.5em;

@@ -10,7 +10,7 @@ const StyledContainer = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-    color: gold;
+    color: ${props => props.theme.link};
     text-align : center;
 `;
 
@@ -23,10 +23,10 @@ const Description = styled.div`
 `;
 
 const SayHiLink = styled.a`
-    border : 2px solid gold;
+    border : 2px solid ${props => props.theme.border};
     border-radius : 5px;
     padding : 10px;
-    color : gold;
+    color : ${props => props.theme.link};
     font-size : 20px;
     font-weight : 500;
     background-color : transparent;

@@ -29,7 +29,7 @@ const TechList = styled.div`
 `;
 
 const Tech = styled.span`
-    border : 2px solid gold;
+    border : 2px solid ${props => props.theme.link};
     margin : 5px;
     padding : 5px;
     border-radius : 5px;

@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
     min-height : 80px;
     margin-left : 20px;
     margin-right : 20px;
-    color : white;
+    color : ${props => props.theme.color};
 
     .fade-enter {
         opacity : 0;
@@ -46,7 +46,7 @@ const StyledListItem = styled.li`
     &:before {
         content: '0' counter(item) '. ';
         text-align: right;
-        color: gold;
+        color: ${props => props.theme.link};
         font-family: 'Caveat', cursive;
         font-size : 1.4em
     }
@@ -55,14 +55,14 @@ const StyledListItem = styled.li`
 
 const Link = styled.a`
     text-decoration : none;
-    color : white;
+    color : ${props => props.theme.color};
 
     :visited {
-        color : white;
+        color : ${props => props.theme.color};
     }
 
     :hover {
-        color : gold;
+        color : ${props => props.theme.link};
     }
 `;
 
@@ -93,10 +93,10 @@ const OL = styled.ol`
 `;
 
 const ResumeButton = styled.a`
-    border : 2px solid gold;
+    border : 2px solid ${props => props.theme.border};
     border-radius : 5px;
     padding : 10px;
-    color : gold;
+    color : ${props => props.theme.link};
     font-size : 15px;
     font-weight : 500;
     background-color : transparent;

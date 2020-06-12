@@ -11,7 +11,7 @@ const StyledContainer = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-    color : gold;
+    color : ${props => props.theme.link};
 `;
 
 const Experience = ({experience,MountData}) => {

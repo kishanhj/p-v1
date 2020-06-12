@@ -25,7 +25,7 @@ const Role = styled.li`
 `;
 
 const Company = styled.a`
-    color : gold;
+    color : ${props => props.theme.link};
     text-decoration : none;
     margin-left : 10px;
 

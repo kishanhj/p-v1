@@ -14,7 +14,7 @@ const StyledContainer = styled.footer`
 
 const Title = styled.h2`
     text-align : center;
-    color : gold;
+    color : ${props => props.theme.link};
     font-family: 'Caveat', cursive;
     font-size : 50px;
 `;
@@ -31,15 +31,15 @@ const Social = styled.div`
 
 const Link = styled.a`
     :visited {
-        color : white;
+        color : ${props => props.theme.color};
     }
 
     :hover {
         font-size : 3em;
-        color : gold;
+        color : ${props => props.theme.link};
     }
 
-    color : white;
+    color : ${props => props.theme.color};
     margin-left : 15px;
     margin-right : 15px;
     text-decoration : none;

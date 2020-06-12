@@ -33,7 +33,7 @@ const Title = styled.h1`
 `;
 
 const Prefix = styled.div`
-    color : gold;
+    color : ${props => props.theme.link};
     font-size : 1.3em;
 `;
 
@@ -50,10 +50,10 @@ const Desc = styled.p`
 `;
 
 const SayHiLink = styled.a`
-    border : 2px solid gold;
+    border : 2px solid ${props => props.theme.border};
     border-radius : 5px;
     padding : 10px;
-    color : gold;
+    color : ${props => props.theme.link};
     font-size : 20px;
     font-weight : 500;
     background-color : transparent;
