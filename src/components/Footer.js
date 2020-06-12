@@ -48,7 +48,11 @@ const Link = styled.a`
     align-self : center;
 `;
 
-const Footer = ({social}) => {
+const Footer = ({social,MountData}) => {
+
+    if(!MountData)
+        return (<StyledContainer></StyledContainer>)
+
     return (
         <StyledContainer>
             <Title>Keep in touch!!</Title>

@@ -16,7 +16,10 @@ const SectionTitle = styled.h2`
 
 var count = 1;
 
-const Project = ({projects}) => {
+const Project = ({projects,MountData}) => {
+
+    if(!MountData)
+        return (<StyledContainer id="projects"></StyledContainer>)
 
     return (
         <StyledContainer id="projects">

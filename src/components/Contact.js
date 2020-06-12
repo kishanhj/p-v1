@@ -44,7 +44,10 @@ const SayHiLink = styled.a`
 `;
 
 
-const Contact = ({contact}) => {
+const Contact = ({contact,MountData}) => {
+
+    if(!MountData)
+        return (<StyledContainer></StyledContainer>)
 
     return (
         <StyledContainer id="contact">

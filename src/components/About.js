@@ -71,11 +71,11 @@ const LinkWarp = styled.div`
     margin-top : 30px;
 `;
 
-const About = ({data}) => {
+const About = ({data,setMountData}) => {
     const {name , tagline , intro} = data;
     const [isMounted,setMounted] = useState(false);
     setInterval(
-        () => setMounted(true),1000
+        () => {setMounted(true);setMountData(true)},1000
     )
 
     const prefixC = () => (<Prefix style={{ transitionDelay: `400ms` }}>Hi, my name is </Prefix>);

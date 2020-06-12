@@ -14,7 +14,10 @@ const SectionTitle = styled.h2`
     color : gold;
 `;
 
-const Experience = ({experience}) => {
+const Experience = ({experience,MountData}) => {
+
+    if(!MountData)
+        return (<StyledContainer id="experience"></StyledContainer>)
 
     return (
         <StyledContainer id="experience">

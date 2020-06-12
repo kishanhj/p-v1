@@ -53,8 +53,9 @@ const Nav = styled.nav`
 
 
 const StyledListItem = styled.li`
-    margin : 0.7em;
+    margin : 0.5em;
     counter-increment : item 1;
+    font-size : 1.3em;
     &:before {
         content: '0' counter(item) '. ';
         text-align: right;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 const StyledContainer = styled.section`
@@ -81,8 +81,12 @@ const Skill = styled.div`
 `;
 
 
-const AboutMe = ({AboutMe}) => {
+const AboutMe = ({AboutMe,MountData}) => {
     const {Summary,Skills} = AboutMe;
+
+    if(!MountData)
+        return (<StyledContainer id="aboutMe"> </StyledContainer>)
+   
     return(
         <StyledContainer id="aboutMe">
             <SectionTitle>1. About Me </SectionTitle>
@@ -102,7 +106,7 @@ const AboutMe = ({AboutMe}) => {
                         </SkillDomain>
                     )}
                 </SkillList>
-            </SkillContainer>
+            </SkillContainer> 
         </StyledContainer>
     )
 } 

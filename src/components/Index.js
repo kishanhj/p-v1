@@ -20,6 +20,7 @@ const Index = () => {
   
   const {data} = require("../data/data.json")
   const [profileData,setProfileData] = useState(data);
+  const [mountData,setMountData] = useState(false);
 
     useEffect(() => {
       async function getData(){
@@ -41,12 +42,12 @@ const Index = () => {
   return (
     <StyledContainer>
       <Header />
-      <About data={profileData}/>
-      <AboutMe AboutMe={profileData.AboutMe} />
-      <Experience experience={profileData.Experience} />
-      <Project projects={profileData.Projects} />
-      <Contact contact={profileData.Contact} />
-      <Footer social={profileData.Social}/>
+      <About data={profileData} setMountData={setMountData}/>
+      <AboutMe AboutMe={profileData.AboutMe} MountData= {mountData}/>
+      <Experience experience={profileData.Experience} MountData= {mountData}/>
+      <Project projects={profileData.Projects} MountData= {mountData}/>
+      <Contact contact={profileData.Contact} MountData= {mountData}/>
+      <Footer social={profileData.Social} MountData= {mountData}/>
     </StyledContainer>
   );
 }
