@@ -12,10 +12,6 @@ const transitionStyles = css`
         transform : translateX(0px);
         transition : transform 300ms ease-in,opacity 300ms ease-in;
     }
-
-    .test {
-        color : green !important;
-      }
 `;
 
 export default transitionStyles;

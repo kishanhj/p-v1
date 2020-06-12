@@ -75,7 +75,10 @@ const About = ({data,setMountData}) => {
     const {name , tagline , intro} = data;
     const [isMounted,setMounted] = useState(false);
     setInterval(
-        () => {setMounted(true);setMountData(true)},1000
+        () => setMounted(true),1000
+    )
+    setInterval(
+        () => setMountData(true),2200
     )
 
     const prefixC = () => (<Prefix style={{ transitionDelay: `400ms` }}>Hi, my name is </Prefix>);
@@ -89,8 +92,8 @@ const About = ({data,setMountData}) => {
     return (
         <StyledContainer id="about">
             <TransitionGroup  component={null}>                       
-                {isMounted  && comps.map((item) => 
-                    <CSSTransition in={isMounted} timeout={1200} 
+                {isMounted  && comps.map((item,i) => 
+                    <CSSTransition key={i} in={isMounted} timeout={1200} 
                     classNames={{
                                 enter: 'fade-enter',
                                 enterActive: 'fade-enter-active'}}>

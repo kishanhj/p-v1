@@ -44,7 +44,7 @@ const Link = styled.a`
     margin-right : 15px;
     text-decoration : none;
     font-size : 2.5em;  
-    flex : 1 1 50px;  
+    flex : 0 0 50px;  
     align-self : center;
 `;
 

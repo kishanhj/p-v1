@@ -4,20 +4,6 @@ import media from "../data/media"
 import "../index.css"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-const trans = css`
-    .fade-enter {
-        opacity : 0;
-        transform : translateX(20px);
-        transition : transform 300ms ease-in,opacity 300ms ease-in;
-    }
-    
-    .fade-enter-active {
-        opacity : 1;
-        transform : translateX(0px);
-        transition : transform 300ms ease-in,opacity 300ms ease-in;
-    }
-`;
-
 const StyledHeader = styled.header`
     display : flex;
     min-height : 80px;
@@ -46,6 +32,7 @@ const Nav = styled.nav`
     ${
         media.tablet `
             flex-direction : column;
+            
         `
     }
 `;
@@ -85,6 +72,12 @@ const Image = styled.img`
     margin : 5px;
     flex : 0 0 60px;
     border-radius : 50px;
+    ${
+        media.tablet `
+            width : 60px;
+            height : 60px;
+        `
+    }
 `;
 
 const LinkContainer = styled.div`
@@ -115,6 +108,13 @@ const ResumeButton = styled.a`
 
     :hover  {
         transform : scale(1.1)
+    }
+
+    ${
+        media.tablet `
+            flex : 0 0 20px;
+            margin-top : 0;
+        `
     }
 `;
 
@@ -173,7 +173,7 @@ const Header = (props) => {
                             classNames={{
                                         enter: 'fade-enter',
                                         enterActive: 'fade-enter-active'}}>
-                                <ResumeButton target='__blank' href="./Resume.pdf"
+                                <ResumeButton target='__blank' href="./Resume.pdf" className="resumeButton"
                                 style={{ transitionDelay: `${links.length * 100}ms` }}> Resume </ResumeButton>
                         </CSSTransition> }
                     </TransitionGroup>

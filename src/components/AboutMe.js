@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import media from "../data/media"
+
 
 const StyledContainer = styled.section`
     max-width: 850px;
@@ -15,6 +17,15 @@ const SectionTitle = styled.h2`
 
 const SummaryContainer = styled.div`
     display : flex;
+    ${
+        media.tablet `
+            flex-direction : column;
+            & > img {
+                margin-bottom : 25px;
+                align-self : center;
+            }
+        `
+    }
 `;
 
 
@@ -26,13 +37,14 @@ const SummaryText = styled.div`
 const Image = styled.img`
     width : 350px;
     border-radius : 5px;
-    margin-left : 15px;
+    margin-right : 25px;
     opacity : 0.75;
     transition : all 0.5s ease-in;
     
     :hover{
         opacity : 1;
         transform : scale(1.1);
+
     }
 `;
 
@@ -91,8 +103,8 @@ const AboutMe = ({AboutMe,MountData}) => {
         <StyledContainer id="aboutMe">
             <SectionTitle>1. About Me </SectionTitle>
             <SummaryContainer>
-                <SummaryText>{Summary} <Link href="https://www.stevens.edu/" target="__blank"> Stevens Institue of Technology</Link></SummaryText>
                 <Image src="./pic.jpg" alt="Image"></Image>
+                <SummaryText>{Summary} <Link href="https://www.stevens.edu/" target="__blank"> Stevens Institue of Technology</Link></SummaryText>
             </SummaryContainer>
             <SkillContainer>
                 <SkillText>Some Technologies I have worked on : </SkillText>
