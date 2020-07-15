@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import media from "../data/media"
 import "../index.css"
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -72,6 +72,8 @@ const Image = styled.img`
     margin : 5px;
     flex : 0 0 60px;
     border-radius : 50px;
+    cursor : pointer;
+
     ${
         media.tablet `
             width : 60px;
@@ -120,7 +122,7 @@ const ResumeButton = styled.a`
 
 
 
-const Header = (props) => {
+const Header = ({themeToggle}) => {
 
     const [isMounted,setMounted] = useState(false);
 
@@ -144,7 +146,7 @@ const Header = (props) => {
                             classNames={{
                                         enter: 'fade-enter',
                                         enterActive: 'fade-enter-active'}}>
-                                <Image src="./img.png" 
+                                <Image src="./img.png" onClick={themeToggle}
                                 style={{ transitionDelay: `100ms` }} /> 
                         </CSSTransition> }
                     </TransitionGroup>

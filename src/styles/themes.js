@@ -1,13 +1,13 @@
 export const dark = {
-    color : "white",
+    color : "#F1E9DA",
     border : "gold",
     link : "gold",
     bg : "#121212"
 }
 
 export const light = {
-    color : "#121212",
+    color : "#131515",
     border : "royalblue",
     link : "royalblue",
-    bg : "white"
+    bg : "#FFFAFB"
 }

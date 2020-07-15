@@ -22,27 +22,32 @@ const Index = () => {
   const {data} = require("../data/data.json")
   const [profileData,setProfileData] = useState(data);
   const [mountData,setMountData] = useState(false);
+  const [isDarkTheme,setIsDarkTheme] = useState(true);
 
-    useEffect(() => {
-      async function getData(){
-        try {
-          const {data} = await Axios.get("https://us-central1-portfolio-61223.cloudfunctions.net/getPortFolioData");
-          setProfileData(data.data);
-        } catch (error) {
-          console.log(error);
-        }
-      };
-      getData();
-    },[]);
+  const themeToggle = () => {
+    setIsDarkTheme((toggle) => !toggle);
+  }
+
+  useEffect(() => {
+    async function getData(){
+      try {
+        const {data} = await Axios.get("https://us-central1-portfolio-61223.cloudfunctions.net/getPortFolioData");
+        setProfileData(data.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getData();
+  },[]);
 
 
   if(!profileData)
   return ( <div className='wrapper'> Loading ... </div>);
 
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={isDarkTheme ? dark : light}>
       <StyledContainer>
-        <Header />
+        <Header themeToggle={themeToggle}/>
         <About data={profileData} setMountData={setMountData}/>
         <AboutMe AboutMe={profileData.AboutMe} MountData= {mountData}/>
         <Experience experience={profileData.Experience} MountData= {mountData}/>
