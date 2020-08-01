@@ -35,7 +35,7 @@ const Link = styled.a`
     }
 
     :hover {
-        font-size : 3em;
+        transform : translateY(-10px);
         color : ${props => props.theme.link};
     }
 
