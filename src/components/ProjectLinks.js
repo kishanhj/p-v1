@@ -3,6 +3,8 @@ import { FaExternalLinkAlt,FaGithub } from 'react-icons/fa';
 import styled from "styled-components";
 
 const StyledContainer = styled.div`
+    display : flex;
+    flex-direction : row;
     margin-top : 26px;
     flex : 0 0 100px;
 `;
@@ -13,14 +15,14 @@ const Link = styled.a`
     }
 
     :hover {
-        font-size : 1.8em; 
+        transform : translateY(-10px); 
         color : ${props => props.theme.link};
     }
 
     color : ${props => props.theme.color};
     margin : 5px;
     text-decoration : none;
-    font-size : 1.5em;
+    font-size : 1.8em;
 `;
 
 
