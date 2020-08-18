@@ -67,8 +67,8 @@ const Link = styled.a`
 `;
 
 const Image = styled.img`
-    width : 50px;
-    height : 60px;
+    width : 100px;
+    height : 120px;
     margin : 5px;
     flex : 0 0 60px;
     border-radius : 50px;
@@ -76,8 +76,8 @@ const Image = styled.img`
 
     ${
         media.tablet `
-            width : 60px;
-            height : 60px;
+            width : 100px;
+            height : 120px;
         `
     }
 `;
@@ -125,6 +125,7 @@ const ResumeButton = styled.a`
 const Header = ({themeToggle}) => {
 
     const [isMounted,setMounted] = useState(false);
+    const [isDarktheme,setIsDarkTheme] = useState(true);
 
     const links = [
         {url : "#aboutMe" , title : "About"},
@@ -136,6 +137,11 @@ const Header = ({themeToggle}) => {
     setInterval(
         () => setMounted(true),1000
     )
+
+    const imageToggle = () => {
+        setIsDarkTheme(!isDarktheme);
+        themeToggle();
+    }
     
     return (
         <StyledHeader>
@@ -146,7 +152,7 @@ const Header = ({themeToggle}) => {
                             classNames={{
                                         enter: 'fade-enter',
                                         enterActive: 'fade-enter-active'}}>
-                                <Image src="./img.png" onClick={themeToggle}
+                                <Image id='img' src={isDarktheme ? "./K-logo-dark.png" : "./K-logo-light.png"} onClick={imageToggle}
                                 style={{ transitionDelay: `100ms` }} /> 
                         </CSSTransition> }
                     </TransitionGroup>
