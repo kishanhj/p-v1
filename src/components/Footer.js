@@ -6,7 +6,7 @@ const StyledContainer = styled.footer`
     max-width: 850px;
     width: 80%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 20px 0;
     opacity : 1;
     diplay : flex;
     flex-direction : colunm;

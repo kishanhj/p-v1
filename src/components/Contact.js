@@ -5,7 +5,7 @@ const StyledContainer = styled.section`
     max-width: 850px;
     width: 90%;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 120px 0 60px 0;
     opacity : 1;
 `;
 

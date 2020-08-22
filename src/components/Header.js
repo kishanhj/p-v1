@@ -9,6 +9,11 @@ const StyledHeader = styled.header`
     min-height : 80px;
     margin-left : 20px;
     margin-right : 20px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1200;
+    background-color : ${props => props.theme.bg};
     color : ${props => props.theme.color};
 
     .fade-enter {
@@ -68,7 +73,7 @@ const Link = styled.a`
 
 const Image = styled.img`
     width : 100px;
-    height : 120px;
+    height : 100px;
     margin : 5px;
     flex : 0 0 60px;
     border-radius : 50px;
